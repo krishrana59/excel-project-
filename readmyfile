@@ -1,0 +1,99 @@
+Algorithm Description for Expense Tracking and Analysis System
+Algorithm Name
+Expense Recording and Analysis Algorithm
+Objective
+To store daily expense records, categorize them, calculate total expenses, and generate category-wise analysis using pivot summary.
+Step-by-Step Algorithm
+Step 1: Start
+Begin the expense tracking process.
+Step 2: Input Expense Details
+Take the following input from the user:
+Date
+Month
+Category
+Amount
+Description
+Payment Method
+Example:
+Date = 01/10/2023
+Category = Groceries
+Amount = 150
+Step 3: Validate Input
+Check whether:
+Date is valid
+Amount is numeric and greater than 0
+Category is not empty
+Payment method is selected
+If invalid, show error and ask for re-entry.
+Step 4: Store Data
+Save the entered data as a new record in the expense dataset.
+Example record format:
+(Date, Month, Category, Amount, Description, Payment Method)
+Step 5: Repeat for All Expenses
+Continue adding records until all expenses are entered.
+Step 6: Categorize Expenses
+Group expenses according to categories such as:
+Groceries
+Utilities
+Entertainment
+Transport
+Healthcare
+Education
+Shopping
+Step 7: Calculate Total Expense
+Compute total spending using:
+Total Expense=∑Amount
+This means adding all expense amounts.
+Example:
+150 + 75.5 + 20 + 45 = Total
+Step 8: Category-wise Analysis
+For each category:
+Sum all amounts belonging to that category
+Count number of transactions
+Formula:
+Category Total=∑Amount of selected category
+This is what your pivot table sheet is doing.
+Example:
+Groceries = 150 + 160 + ...
+Step 9: Monthly Analysis
+Group data month-wise using the Month column.
+Calculate:
+Monthly Expense=∑Amount for same month
+This helps compare monthly spending.
+Step 10: Generate Pivot Table Summary
+Create a pivot table with:
+Rows = Category / Description
+Values = Sum of Amount
+This provides summarized analysis.
+Step 11: Display Results
+Show:
+Total expenses
+Category-wise totals
+Monthly totals
+Highest expense category
+Step 12: End
+Stop the process.
+Simple Pseudocode
+START
+
+Input expense details
+Validate input
+
+IF input is valid THEN
+    Store record
+ELSE
+    Show error
+END IF
+
+FOR each category
+    Calculate sum of amount
+END FOR
+
+FOR each month
+    Calculate monthly total
+END FOR
+
+Generate pivot table summary
+Display analysis report
+
+STOP
